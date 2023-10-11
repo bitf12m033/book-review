@@ -59,5 +59,5 @@
         @endforelse
     </ul>
 
-
+    
 @endsection
