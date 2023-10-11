@@ -64,9 +64,10 @@ class BookController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Book $book)
     {
-        //
+       
+        return view('books.show' , ['book' =>$book->load(['reviews' => fn($query) =>$query->latest()])]); //Eager Loading
     }
 
     /**
