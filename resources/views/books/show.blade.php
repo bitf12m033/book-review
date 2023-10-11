@@ -48,5 +48,8 @@
         </li>
       @endforelse
     </ul>
+    <nav>
+       {{-- {{ $reviews->links() }} --}}
+    </nav>
   </div>
 @endsection
