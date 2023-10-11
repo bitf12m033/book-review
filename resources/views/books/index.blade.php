@@ -40,10 +40,10 @@
                 </div>
                 <div>
                   <div class="book-rating">
-                    {{-- {{ number_format($books->reviews_avg_rating , 1) }} --}}
+                    {{ number_format($book->reviews_avg_rating , 1) }}
                   </div>
                   <div class="book-review-count">
-                    {{-- out of {{ $book->reviews_count }} {{  Str::plural('review', $book->reviews_count) }} --}}
+                    out of {{ $book->reviews_count }} {{  Str::plural('review', $book->reviews_count) }}
                   </div>
                 </div>
               </div>
